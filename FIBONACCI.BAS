@@ -1,4 +1,4 @@
-10 INPUT "Informe o ¡ndice: ", I
+10 INPUT "Informe o ï¿½ndice: ", I
 20 A1 = 0
 30 A2 = 1
 40 FOR L = 2 TO I
