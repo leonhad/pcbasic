@@ -1,0 +1,21 @@
+10 REM Initialize data
+20 I%=10:DIM A%(10):GOTO 40
+30 DATA 1,5,2,3,6,9,10,7,8,4
+40 FOR L%=0 TO I%-1
+50 READ A%(L%)
+60 NEXT L%
+70 FOR L%=0 TO I%-1
+80 PRINT "Valor ",A%(L%)
+90 NEXT L%
+100 REM Bubble sort
+110 S%=1:WHILE S%<>0:S%=0
+120 FOR B%=0 TO I%-2
+130 IF A%(B%) < A%(B%+1) THEN 160
+140 SWAP A%(B%), A%(B%+1)
+150 S%=1
+160 NEXT B%
+170 WEND
+180 FOR L%=0 TO I%-1
+190 PRINT A%(L%)
+200 NEXT
+
