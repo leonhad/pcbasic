@@ -1,5 +1,5 @@
 10 REM Initialize data
-20 I%=10:DIM A%(10):GOTO 40
+20 I%=10:DIM A%(10)
 30 DATA 1,5,2,3,6,9,10,7,8,4
 40 FOR L%=0 TO I%-1
 50 READ A%(L%)
