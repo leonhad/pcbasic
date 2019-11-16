@@ -1,0 +1,21 @@
+10 REM Initialize data
+20 I%=10:DIM A%(10):GOTO 40
+30 DATA 1,5,2,3,6,9,10,7,8,4
+40 FOR L%=0 TO I%-1
+50 READ A%(L%)
+60 NEXT L%
+70 FOR L%=0 TO I%-1
+80 PRINT "Valor ",A%(L%)
+90 NEXT L%
+100 REM Selecion Sort
+110 FOR B%=0 TO I%-2
+120 P%=B%
+130 FOR C%=B%+1 TO I%-1
+140 IF A%(P%) > A%(C%) THEN P%=C%
+150 NEXT C%
+160 SWAP A%(B%), A%(P%)
+170 NEXT B%
+180 FOR L%=0 TO I%-1
+190 PRINT A%(L%)
+200 NEXT L%
+
